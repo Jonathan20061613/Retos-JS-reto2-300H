@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Reto de Lógica de Programación - Semana 2</h1>
+            <h2>🔢 Generador de Secuencia de Fibonacci</h2>
+        </header>
+
+        <section class="description">
+            <h3>📄 Descripción:</h3>
+            <p>Tu misión esta semana es escribir una función en JavaScript que genere la secuencia de Fibonacci hasta un número dado <em>n</em>. En esta ocasión, la función deberá generar los números de Fibonacci que sean menores o iguales a <em>n</em>.</p>
+            <p>La secuencia de Fibonacci comienza con los números <strong>0</strong> y <strong>1</strong>, y cada número siguiente es la suma de los dos anteriores. Algunos términos de la secuencia son: <strong>0, 1, 1, 2, 3, 5, 8, 13...</strong></p>
+        </section>
+
+        <section class="instructions">
+            <h3>🚀 Instrucciones:</h3>
+            <ul>
+                <li>La función debe recibir un número entero positivo <em>n</em> como argumento.</li>
+                <li>Debe devolver un array con todos los números de la secuencia de Fibonacci menores o iguales a <em>n</em>.</li>
+                <li>Si <em>n</em> es menor que 0, la función debe devolver un array vacío.</li>
+                <li>Comparte el link del repositorio con el reto resuelto.</li>
+            </ul>
+        </section>
+
+        <section class="form-container">
+            <h3>🔢 Generar Secuencia:</h3>
+            <form id="fibonacci-form">
+                <label for="number-input">Ingresa un número (n):</label>
+                <input type="number" id="number-input" min="0" placeholder="e.g., 10" required>
+                <button type="submit">Generar</button>
+            </form>
+        </section>
+
+        <section id="result">
+            <h3>📋 Resultado:</h3>
+            <p id="output"></p>
+        </section>
+
+        <section id="explanation">
+            <h3>📚 ¿Cómo funciona la secuencia de Fibonacci?</h3>
+            <p>La secuencia de Fibonacci es una serie matemática en la que cada término se calcula sumando los dos términos anteriores, comenzando con <strong>0</strong> y <strong>1</strong>.</p>
+            <p><strong>Proceso:</strong></p>
+            <ul>
+                <li>Los dos primeros números son <strong>0</strong> y <strong>1</strong>.</li>
+                <li>El tercer número es la suma de los dos primeros: <strong>0 + 1 = 1</strong>.</li>
+                <li>El cuarto número es la suma del segundo y el tercero: <strong>1 + 1 = 2</strong>.</li>
+                <li>El quinto número es la suma del tercero y el cuarto: <strong>1 + 2 = 3</strong>.</li>
+                <li>Y así sucesivamente: <strong>2 + 3 = 5</strong>, <strong>3 + 5 = 8</strong>, etc.</li>
+            </ul>
+            <p>En términos generales, si denotamos la secuencia como <em>F</em>, entonces:</p>
+            <p><em>F(n) = F(n-1) + F(n-2)</em>, donde <em>F(0) = 0</em> y <em>F(1) = 1</em>.</p>
+            <p>La secuencia de Fibonacci aparece frecuentemente en la naturaleza, como en la formación de ramas de árboles, disposición de hojas y conchas de moluscos.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
